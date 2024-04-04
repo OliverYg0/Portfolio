@@ -13,8 +13,12 @@ app.use((req, res, next) => {
 })
 
 app.get('/', (req, res) => {
+    res.redirect('/home')
+})
+
+app.get('/home', (req, res) => {
     res.render('index', { page: 'Home', message: 'Hello there!' })
-  })
+})
 
 app.listen(port, () => {
     console.log('App is listening on port', port)
