@@ -7,4 +7,14 @@
 body {
   background: #0a0a0a;
   color: #f1f1f1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  color: #f1f1f1;
 }/*# sourceMappingURL=main.css.map */
