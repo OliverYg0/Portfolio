@@ -1,29 +1,31 @@
 doctype html
 html(lang="en")
 
-head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title #{title} - #{page}
-    link(rel="stylesheet", href="/styles/general-styles.css")
-    link(rel="stylesheet", href="/styles/mobile-styles.css")
-    link(rel="stylesheet", href="/styles/desktop-styles.css")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title} - #{page}
 
-body
+        //- Custom CSS stylesheets
+        link(rel="stylesheet", href="/styles/general-styles.css")
+        link(rel="stylesheet", href="/styles/mobile-styles.css")
+        link(rel="stylesheet", href="/styles/desktop-styles.css")
 
-    //- Link to file containing the websites top navigation
-    include includes/header.pug
+    body
 
-    main
-        .container
-            //- This is where the main content on the page will be added
-                The 'block content' is like a place holder and will tells
-                the page where the content goes
-            block content
+        //- Link to file containing the websites top navigation
+        include includes/header.pug
 
-    //- Link to the websites footer
-    include includes/footer.pug
+        main
+            .container
+                //- This is where the main content on the page will be added
+                    The 'block content' is like a place holder and will tells
+                    the page where the content goes
+                block content
 
-    //- Linked Javascript files
-    script(src="/scripts/general-scripts.js")
-    script(src="/scripts/header-scripts.js")
+        //- Link to the websites footer
+        include includes/footer.pug
+        
+        //- Linked Javascript files
+        script(src="/scripts/general-scripts.js")
+        script(src="/scripts/header-scripts.js")

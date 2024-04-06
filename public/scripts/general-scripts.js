@@ -1,0 +1,1 @@
+// Pause scrolling function here
