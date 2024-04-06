@@ -1,3 +1,9 @@
+:root {
+  --transition-duration: .3s;
+  --border-radius: 0;
+  --border-width: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,11 +29,21 @@ a {
   color: #f1f1f1;
 }
 
+.logo {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 4em;
 }
 nav .nav-items {
   list-style: none;
   display: flex;
+}
+nav .nav-items .nav-link {
+  text-decoration: none;
 }/*# sourceMappingURL=general-styles.css.map */

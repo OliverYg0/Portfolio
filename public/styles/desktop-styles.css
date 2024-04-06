@@ -1,1 +1,5 @@
-/*# sourceMappingURL=desktop-styles.css.map */
+@media screen and (min-width: 768px) {
+  .nav-link {
+    margin-left: 1.5em;
+  }
+}/*# sourceMappingURL=desktop-styles.css.map */
