@@ -19,7 +19,15 @@ app.get('/', (req, res) => {
 })
 
 app.get('/home', (req, res) => {
-    res.render('index', { page: 'Home', message: 'Hello there!' })
+    res.render('index', { page: 'Home'})
+})
+
+app.get('/projects', (req, res) => {
+    res.render('projects', {page: 'Projects'})
+})
+
+app.get('/contact', (req, res) => {
+    res.render('contact', {page: 'Contact'})
 })
 
 app.listen(port, () => {

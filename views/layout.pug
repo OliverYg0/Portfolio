@@ -1,16 +1,25 @@
 doctype html
 html(lang="en")
+
+//- This linked file containes the websites css links in the head
 head
-    block head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{title} - #{page}
-        link(rel="stylesheet", href="/styles/main.css")
+    include includes/head.pug
+
 body
+
+    //- Link to file containing the websites top navigation
     include includes/header.pug
 
-    .container
-        block content
+    main
+        .container
+            //- This is where the main content on the page will be added
+                The 'block content' is like a place holder and will tells
+                the page where the content goes
+            block content
 
+    //- Link to the websites footer
     include includes/footer.pug
-    source(src="scripts/main.js")
+
+    //- Linked Javascript files
+    script(src="/scripts/general-scripts.js")
+    script(src="/scripts/header-scripts.js")
