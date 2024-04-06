@@ -11,10 +11,23 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+}
+
+section {
+  margin: 3em 0;
 }
 
 a {
   color: #f1f1f1;
-}/*# sourceMappingURL=main.css.map */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-items {
+  list-style: none;
+  display: flex;
+}/*# sourceMappingURL=general-styles.css.map */
