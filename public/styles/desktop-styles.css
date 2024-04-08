@@ -1,5 +1,9 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 786px) {
   .nav-link {
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
+  }
+  header .btn {
+    display: inline;
+    margin-left: 1.5rem;
   }
 }/*# sourceMappingURL=desktop-styles.css.map */

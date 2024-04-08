@@ -1,9 +1,13 @@
 :root {
   --transition-duration: .3s;
-  --border-radius: 8px;
+  --border-radius: 10px;
   --border-width: 0;
-  --header-height: 4.5em;
-  --container-width: 80%;
+  --header-height: 72px;
+  --container-width: 85%;
+  --primary-color: #d17a22;
+  --secondary-color: #0b132b;
+  --accent-color: #3a506b;
+  --text-color: #efefef;
 }
 
 * {
@@ -13,9 +17,10 @@
 }
 
 body {
-  background: #0a0a0a;
-  color: #f1f1f1;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  background: var(--secondary-color);
 }
 body.scrolling-paused {
   overflow-y: hidden;
@@ -26,10 +31,26 @@ body.scrolling-paused {
   margin: 0 auto;
 }
 
+section {
+  margin: 3rem 0;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--text-color);
+}
+
 .logo {
   font-weight: bold;
   text-decoration: none;
-  color: #f1f1f1;
+  color: var(--primary-color);
+}
+
+header {
+  background: var(--secondary-color);
 }
 
 nav {
@@ -39,57 +60,28 @@ nav {
   align-items: center;
 }
 
-.nav-toggle-bar {
-  width: 1.4em;
-  height: 0.21em;
-  background: #f1f1f1;
-  margin-bottom: 0.21em;
-  border-radius: 10px;
-  transition: rotate var(--transition-duration) ease;
-}
-.nav-toggle-bar:last-child {
-  margin-bottom: 0;
-}
-
-.nav-toggle.nav-active .nav-toggle-bar:first-child {
-  transform-origin: top left;
-  rotate: 45deg;
-}
-.nav-toggle.nav-active .nav-toggle-bar:nth-child(2) {
-  display: none;
-}
-.nav-toggle.nav-active .nav-toggle-bar:last-child {
-  transform-origin: top left;
-  rotate: -45deg;
-}
-
 .nav-items {
-  position: fixed;
-  left: -100%;
-  bottom: 0;
-  width: 100%;
-  height: calc(100vh - var(--header-height));
-  background: #0a0a0a;
   list-style: none;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: left var(--transition-duration) ease;
 }
-.nav-items .nav-item {
-  width: 80%;
-  margin: 0 auto;
+
+.nav-link {
+  text-decoration: none;
+  transition: color var(--transition-duration) ease;
 }
-.nav-items .nav-link {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 0.25em 0;
+.nav-link:hover {
+  color: var(--primary-color);
+}
+.nav-link.active {
+  color: var(--primary-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: bold;
-  font-size: 2em;
-  color: #f1f1f1;
-}
-.nav-items.nav-active {
-  left: 0;
+  border-radius: var(--border-radius);
 }/*# sourceMappingURL=general-styles.css.map */
