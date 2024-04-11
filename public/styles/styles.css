@@ -1,0 +1,97 @@
+header {
+  background: #0A2342;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-toggle .nav-toggle-bar {
+    width: 1.4rem;
+    height: 0.21rem;
+    background: #f1f1f1;
+    margin-bottom: 0.21rem;
+    border-radius: 16px;
+    transition: transform 300ms ease;
+  }
+  .nav-toggle .nav-toggle-bar:last-child {
+    margin-bottom: 0;
+  }
+  .nav-toggle.nav-active .nav-toggle-bar:first-child {
+    transform: rotate(45deg) translateY(5px);
+  }
+  .nav-toggle.nav-active .nav-toggle-bar:nth-child(2) {
+    display: none;
+  }
+  .nav-toggle.nav-active .nav-toggle-bar:last-child {
+    transform: rotate(-45deg) translateY(-5px);
+  }
+  .nav-items {
+    position: absolute;
+    left: -100%;
+    top: 4rem;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background: #0A2342;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 300ms ease;
+  }
+  .nav-items.nav-active {
+    left: 0;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    height: 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-link {
+    margin-left: 1.5em;
+    text-decoration: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f1f1f1;
+  background: #0b1017;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+a {
+  color: #f1f1f1;
+  transition: color 300ms ease;
+}
+a:hover {
+  color: #BFAB25;
+}/*# sourceMappingURL=styles.css.map */
