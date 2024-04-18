@@ -9,11 +9,6 @@ nav {
   height: 5rem;
 }
 
-.logo {
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .nav-items {
   list-style: none;
   display: flex;
@@ -132,6 +127,8 @@ a:hover {
 .logo {
   font-size: 1.2rem;
   color: #D76A03;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 h1 {
