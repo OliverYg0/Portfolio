@@ -1,12 +1,12 @@
 header {
-  background: #0A2342;
+  background: #0b1017;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 5rem;
 }
 
 .logo {
@@ -43,10 +43,10 @@ nav {
   .nav-items {
     position: absolute;
     left: -100%;
-    top: 4rem;
+    top: 5rem;
     width: 100%;
-    height: calc(100vh - 4rem);
-    background: #0A2342;
+    height: calc(100vh - 5rem);
+    background: #0b1017;
     flex-direction: column;
     justify-content: center;
     transition: left 300ms ease;
@@ -64,7 +64,7 @@ nav {
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
-    height: 4rem;
+    height: 5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -76,30 +76,30 @@ nav {
 .primary-btn,
 .secondary-btn {
   display: inline-block;
-  padding: 0.7em 1.1em;
+  padding: 0.9em 1.3em;
   border-radius: 8px;
   text-decoration: none;
   transition: background 300ms ease, color 300ms ease;
 }
 
 .primary-btn {
-  background: #BFAB25;
+  background: #D76A03;
   color: #0b1017;
 }
 .primary-btn:hover {
-  padding: calc(0.7em - 2px) calc(1.1em - 2px);
+  padding: calc(0.9em - 2px) calc(1.3em - 2px);
   background: none;
-  border: 2px solid #BFAB25;
+  border: 2px solid #D76A03;
 }
 
 .secondary-btn {
-  padding: calc(0.7em - 2px) calc(1.1em - 2px);
-  border: 2px solid #BFAB25;
-  color: #BFAB25;
+  padding: calc(0.9em - 2px) calc(1.3em - 2px);
+  border: 2px solid #D76A03;
+  color: #D76A03;
 }
 .secondary-btn:hover {
-  background: #BFAB25;
-  color: #f1f1f1;
+  background: #D76A03;
+  color: #0b1017;
 }
 
 @media screen and (max-width: 768px) {
@@ -127,7 +127,8 @@ nav {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "segoe UI";
+  font-size: 16px;
   color: #f1f1f1;
   background: #0b1017;
 }
@@ -142,28 +143,5 @@ a {
   transition: color 300ms ease;
 }
 a:hover {
-  color: #BFAB25;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-.section-padding {
-  padding: 4em 0;
-}
-.section-padding h1 {
-  margin-bottom: 0.75rem;
-}
-.section-padding p {
-  margin-bottom: 1.5rem;
-}
-.section-padding .primary-btn {
-  margin-right: 1.25rem;
-}
-
-@media screen and (min-width: 768px) {
-  .section-padding p {
-    width: 50%;
-  }
+  color: #D76A03;
 }/*# sourceMappingURL=styles.css.map */

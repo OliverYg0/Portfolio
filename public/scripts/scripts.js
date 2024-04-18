@@ -19,5 +19,6 @@ navToggle.addEventListener('click', () => {
 navLinks.forEach(navLink => {
     navLink.addEventListener('click', () => {
         toggleNav()
+        navLink.classList.add('active')
     })
 })
