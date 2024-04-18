@@ -80,6 +80,7 @@ nav {
   border-radius: 8px;
   text-decoration: none;
   transition: background 300ms ease, color 300ms ease;
+  font-weight: bold;
 }
 
 .primary-btn {
@@ -87,14 +88,14 @@ nav {
   color: #0b1017;
 }
 .primary-btn:hover {
-  padding: calc(0.9em - 2px) calc(1.3em - 2px);
+  padding: calc(0.9em - 3px) calc(1.3em - 3px);
   background: none;
-  border: 2px solid #D76A03;
+  border: 3px solid #D76A03;
 }
 
 .secondary-btn {
-  padding: calc(0.9em - 2px) calc(1.3em - 2px);
-  border: 2px solid #D76A03;
+  padding: calc(0.9em - 3px) calc(1.3em - 3px);
+  border: 3px solid #D76A03;
   color: #D76A03;
 }
 .secondary-btn:hover {
@@ -120,6 +121,44 @@ nav {
     display: inline;
   }
 }
+a {
+  color: #f1f1f1;
+  transition: color 300ms ease;
+}
+a:hover {
+  color: #D76A03;
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: #D76A03;
+}
+
+h1 {
+  font-family: "segoe UI";
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  line-height: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #D76A03;
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 11rem 0;
+}
+section p {
+  margin: 1.5rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  section p {
+    width: 50%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -134,14 +173,13 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: clamp(200px, 85%, 1200px);
   margin: 0 auto;
 }
 
-a {
-  color: #f1f1f1;
-  transition: color 300ms ease;
+#hero {
+  text-align: center;
 }
-a:hover {
-  color: #D76A03;
+#hero .primary-btn {
+  margin-right: clamp(1rem, 2vw, 1.5rem);
 }/*# sourceMappingURL=styles.css.map */
