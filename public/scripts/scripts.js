@@ -4,7 +4,7 @@ function pauseScrolling() {
 
 const navToggle = document.querySelector('.nav-toggle')
 const navItems = document.querySelector('.nav-items')
-const navLinks = document.querySelectorAll('.navLinks')
+const navLinks = document.querySelectorAll('.nav-link')
 
 function toggleNav() {
     navItems.classList.toggle('nav-active')
