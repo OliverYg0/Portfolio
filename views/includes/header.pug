@@ -8,12 +8,10 @@ header
                 .nav-toggle-bar
             ul.nav-items
                 li.nav-item
-                    a.nav-link.active(href="/home") Home
+                    a.nav-link(class={active: page === "Home"} href="#home") Home
                 li.nav-item
-                    a.nav-link(href="/projects") Projects
+                    a.nav-link(class={active: page === "Projects"} href="#projects") Projects
                 li.nav-item
-                    a.nav-link(href="/contact") About
+                    a.nav-link(class={active: page === "Contact"} href="#contact") Contact
                 li.nav-item
-                    a.nav-link(href="/contact") Contact
-                li.nav-item
-                    a.nav-link.secondary-btn(href='/documents/Oliver Zygo CV 2024.pdf', target="_blank") Download CV
+                    a.nav-link(href='/documents/Oliver Zygo CV 2024.pdf', target="_blank") CV
