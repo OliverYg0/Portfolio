@@ -15,15 +15,7 @@ app.use((req, res, next) => {
 })
 
 app.get('/', (req, res) => {
-    res.redirect('/home')
-})
-
-app.get('/home', (req, res) => {
     res.render('index', { page: 'Home'})
-})
-
-app.get('/projects', (req, res) => {
-    res.render('projects', {page: 'Projects'})
 })
 
 app.get('/contact', (req, res) => {

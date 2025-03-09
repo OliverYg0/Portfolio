@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- Meta data for SEO
+        meta(name="author", content="Oliver Zygo")
+        meta(name="description", content="Hi, I'm Oliver Zygo. This is my portfolio.")
+
+        title #{title} - #{page}
+
+        //- Custom stylesheets
+        link(rel="stylesheet", href="/styles/styles.css")
+
+    body
+
+        //- Link to file containing the navbar
+        include ../includes/header.pug
+
+        main
+            //- This is where the main content on the page will be added
+                The 'block content' is like a place holder and will tells
+                the page where the content goes
+            block content
+
+        //- Link to the footer
+        //- include ../includes/footer.pug
+        
+        //- Javascript files
+        script(src="/scripts/scripts.js")

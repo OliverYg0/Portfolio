@@ -1,11 +1,5 @@
-extends layout.pug
+extends layouts/default_layout.pug
 
 block content
-    section#hero
-        .container
-            h1 Full Stack Developer
-            p.
-                Passionate job seeker with strong organizational skills, highly motivated- my aim is to absorb as
-                much knowledge possible gaining crucial skills for any future projects.
-            a.secondary-btn(href="/documents/Oliver Zygo CV 2024.pdf") My CV
-            a.primary-btn(href="/projects") Projects
+    include sections/hero.pug
+    include sections/projects.pug
