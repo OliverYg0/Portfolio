@@ -2,7 +2,7 @@
   --container-width: 95%;
   --border-radius: 5px;
   --border-width: 2px;
-  --transition-duration: 250ms;
+  --transition-duration: 200ms;
   --header-height: 4em;
   --secondary-color: #005ec1;
 }
@@ -10,7 +10,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -41,42 +40,37 @@ h2 {
   color: var(--secondary-color);
 }
 
-a {
-  color: #f1f1f1;
-  text-decoration: none;
-  transition: color var(--transition-duration) ease;
-}
-a:hover {
-  color: var(--secondary-color);
-}
-
 .current-page {
   color: var(--secondary-color);
 }
 
 .primary-btn, .secondary-btn {
+  text-decoration: none;
   font-weight: bold;
   display: inline-block;
   padding: 0.75em 1.5em;
-  background: None;
   border-radius: var(--border-radius);
-  border: var(--border-width) solid #f1f1f1;
   transition: background var(--transition-duration) ease, color var(--transition-duration) ease;
 }
 
 .primary-btn {
   background: var(--secondary-color);
   color: #f1f1f1;
-  border-color: var(--secondary-color);
 }
 .primary-btn:hover {
-  background: #0a0a0a;
+  background: none;
   color: var(--secondary-color);
+  outline: var(--border-width) solid var(--secondary-color);
 }
 
-.secondary-btn:hover {
+.secondary-btn {
   background: #f1f1f1;
   color: #0a0a0a;
+}
+.secondary-btn:hover {
+  background: none;
+  color: #f1f1f1;
+  outline: var(--border-width) solid #f1f1f1;
 }
 
 .logo {
@@ -84,15 +78,19 @@ a:hover {
   font-size: 1.1em;
 }
 
-header {
-  background: #121212;
-}
-
 nav {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+nav a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color var(--transition-duration) ease;
+}
+nav a:hover {
+  color: var(--secondary-color);
 }
 
 .nav-items {
