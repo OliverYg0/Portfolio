@@ -1,19 +1,22 @@
 {
   "name": "src",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio for Oliver Zygo",
   "main": "app.js",
   "scripts": {
     "dev": "npx pm2-dev app.js",
-    "start": "npx pm2 start app.js"
+    "start": "npx pm2 start app.js",
+    "compile": "sass --watch --no-source-map public/sass:public/css"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["portfolio", "oliver", "zygo"],
+  "author": "Oliver Zygo",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1",
     "pm2": "^6.0.14",
-    "pug": "^3.0.4"
+    "pug": "^3.0.4",
+    "sass": "^1.98.0",
+    "serve-favicon": "^2.5.1"
   }
 }
