@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.woff2") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/fonts/Satoshi-Black.woff2") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +17,11 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: radial-gradient(circle at top right, #1a1a2e, #000000);
-  color: #f1f1f1;
-  font-size: 1.2em;
+  font-family: "Montserrat-Regular", "Segoe UI";
+  font-family: Montserrat-Regular;
+  background: radial-gradient(circle at 20% 20%, #1a1a2e 0%, #000000 100%);
+  color: #f8f9fa;
+  line-height: 1.6;
 }
 body.paused-scrolling {
   height: 100vh;
@@ -16,7 +29,8 @@ body.paused-scrolling {
 }
 
 .container {
-  width: 80%;
+  width: 85%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -24,8 +38,15 @@ section {
   padding: 5em 0;
 }
 
+h1, h2, .logo {
+  font-family: "Satoshi-Black", sans-serif;
+}
+
 h1 {
-  font-size: 5em;
+  font-size: clamp(2rem, 7vw, 5.5rem);
+  line-height: 1.1;
+  margin-bottom: 0.2em;
+  letter-spacing: -0.02em;
 }
 
 h2 {
@@ -42,10 +63,10 @@ h2 {
   font-weight: bold;
   display: inline-block;
   padding: 0.75em 1.5em;
-  border-radius: 5px;
-  transition: background 200ms ease, color 200ms ease;
+  border-radius: 8px;
+  transition: background 300ms ease, color 300ms ease;
   background: #005ec1;
-  color: #f1f1f1;
+  color: #f8f9fa;
 }
 .primary-btn:hover {
   background: none;
@@ -58,32 +79,34 @@ h2 {
   font-weight: bold;
   display: inline-block;
   padding: 0.75em 1.5em;
-  border-radius: 5px;
-  transition: background 200ms ease, color 200ms ease;
-  background: #f1f1f1;
-  color: radial-gradient(circle at top right, #1a1a2e, #000000);
+  border-radius: 8px;
+  transition: background 300ms ease, color 300ms ease;
+  background: none;
+  color: #f8f9fa;
+  outline: 2px solid #464646;
 }
 .secondary-btn:hover {
-  background: none;
-  color: #f1f1f1;
-  outline: 2px solid #f1f1f1;
+  background: #464646;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.4em;
+  color: #f8f9fa;
 }
 
 nav {
-  height: 4em;
+  height: 5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 nav a {
-  color: #f1f1f1;
+  color: #f8f9fa;
   text-decoration: none;
-  transition: color 200ms ease;
+  font-size: 0.95em;
+  font-weight: 500;
+  transition: color 300ms ease;
 }
 nav a:hover {
   color: #005ec1;
@@ -94,18 +117,21 @@ nav a:hover {
   display: flex;
 }
 .nav-items .nav-link {
-  margin-left: 1.75em;
+  margin-left: 2.75em;
 }
 
 #hero {
-  height: calc(100vh - 4em);
+  height: calc(100vh - 5em);
   display: flex;
   align-items: center;
   padding: 0;
+  animation: fadeIn 1s ease-out;
 }
 #hero p {
-  max-width: 600px;
-  margin: 1.25em 0 2em 0;
+  max-width: 55ch;
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  margin: 1.5em 0 2.5em 0;
 }
 #hero .secondary-btn {
   margin-right: 1em;
@@ -125,9 +151,9 @@ nav a:hover {
     width: 1.5em;
     height: 0.2em;
     margin-bottom: 0.25em;
-    background: #f1f1f1;
-    border-radius: 5px;
-    transition: transform 200ms ease;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 300ms ease;
   }
   .nav-toggle .nav-toggle-bar:last-child {
     margin-bottom: 0;
@@ -144,22 +170,32 @@ nav a:hover {
   .nav-items {
     position: fixed;
     left: -100%;
-    top: 4em;
+    top: 5em;
     width: 100%;
-    height: calc(100vh - 4em);
+    height: calc(100vh - 5em);
     flex-direction: column;
     justify-content: center;
-    background: radial-gradient(circle at top right, #1a1a2e, #000000);
-    transition: left 200ms ease;
+    background: radial-gradient(circle at 20% 20%, #1a1a2e 0%, #000000 100%);
+    transition: left 300ms ease;
   }
   .nav-items .nav-link {
     display: block;
     width: 100%;
-    line-height: calc(4em * 0.6);
+    line-height: calc(5em * 0.6);
     font-size: 1.5em;
     font-weight: bold;
   }
   .nav-items.nav-active {
     left: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
