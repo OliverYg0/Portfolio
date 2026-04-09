@@ -36,6 +36,7 @@ body.paused-scrolling {
 
 section {
   padding: 5em 0;
+  animation: fadeIn 1s ease-out;
 }
 
 h1, h2, .logo {
@@ -43,7 +44,7 @@ h1, h2, .logo {
 }
 
 h1 {
-  font-size: clamp(2rem, 7vw, 5.5rem);
+  font-size: clamp(2rem, 7vw, 5rem);
   line-height: 1.1;
   margin-bottom: 0.2em;
   letter-spacing: -0.02em;
@@ -52,6 +53,13 @@ h1 {
 h2 {
   font-size: 1.75em;
   color: #005ec1;
+}
+
+p {
+  max-width: 55ch;
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  margin: 1.5em 0 2.5em 0;
 }
 
 .current-page {
@@ -121,11 +129,9 @@ nav a:hover {
 }
 
 #hero {
-  height: calc(100vh - 5em);
+  height: calc(70vh - 5em);
   display: flex;
   align-items: center;
-  padding: 0;
-  animation: fadeIn 1s ease-out;
 }
 #hero p {
   max-width: 55ch;
@@ -135,6 +141,12 @@ nav a:hover {
 }
 #hero .secondary-btn {
   margin-right: 1em;
+}
+
+#about {
+  height: calc(30vh - 5em);
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 600px) {
