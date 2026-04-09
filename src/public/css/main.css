@@ -23,7 +23,8 @@ body {
   color: #f8f9fa;
   line-height: 1.6;
 }
-body.paused-scrolling {
+
+.paused-scrolling {
   height: 100vh;
   overflow: hidden;
 }

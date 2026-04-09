@@ -1,5 +1,5 @@
 function pauseScrolling() {
-    document.body.classList.toggle('scrolling-paused')
+    document.body.classList.toggle('paused-scrolling')
 }
 
 const navToggle = document.querySelector('.nav-toggle')
