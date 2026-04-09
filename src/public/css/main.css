@@ -30,7 +30,7 @@ body.paused-scrolling {
 
 .container {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -44,10 +44,10 @@ h1, h2, .logo {
 }
 
 h1 {
-  font-size: clamp(2rem, 7vw, 5rem);
+  font-size: clamp(2rem, 7vw, 4.25rem);
   line-height: 1.1;
   margin-bottom: 0.2em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 h2 {
@@ -57,9 +57,9 @@ h2 {
 
 p {
   max-width: 55ch;
-  font-size: 1.1rem;
+  font-size: 1em;
   color: #a0a0a0;
-  margin: 1.5em 0 2.5em 0;
+  margin: 1em 0;
 }
 
 .current-page {
@@ -129,32 +129,24 @@ nav a:hover {
 }
 
 #hero {
-  height: calc(70vh - 5em);
+  height: calc(80vh - 5em);
   display: flex;
   align-items: center;
+}
+#hero h1 {
+  max-width: 450px;
 }
 #hero p {
-  max-width: 55ch;
-  font-size: 1.1rem;
-  color: #a0a0a0;
-  margin: 1.5em 0 2.5em 0;
+  font-size: 1.3em;
+  margin: 0 0 1.6em 0;
 }
 #hero .secondary-btn {
-  margin-right: 1em;
-}
-
-#about {
-  height: calc(30vh - 5em);
-  display: flex;
-  align-items: center;
+  margin-left: 1em;
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 1em;
-  }
   h1 {
-    font-size: 3.6em;
+    font-size: 3.2em;
   }
   section {
     text-align: center;
