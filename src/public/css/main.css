@@ -80,9 +80,7 @@ a {
   color: #f8f9fa;
 }
 .primary-btn:hover {
-  background: none;
-  color: #005ec1;
-  outline: 2px solid #005ec1;
+  background: #003166;
 }
 
 .secondary-btn {
@@ -92,12 +90,11 @@ a {
   padding: 0.75em 1.5em;
   border-radius: 8px;
   transition: background 300ms ease, color 300ms ease;
-  background: none;
-  color: #f8f9fa;
-  outline: 2px solid #464646;
+  background: #f8f9fa;
+  color: #0a0a0a;
 }
 .secondary-btn:hover {
-  background: #464646;
+  background: #8f8f8f;
 }
 
 .logo {
@@ -141,7 +138,8 @@ nav a:hover {
 }
 #hero p {
   font-size: 1.3em;
-  margin: 0 0 1.6em 0;
+  margin: 0 0 1.2em 0;
+  color: #a0a0a0;
 }
 #hero .secondary-btn {
   margin-left: 1em;
