@@ -58,8 +58,11 @@ h2 {
 p {
   max-width: 55ch;
   font-size: 1em;
-  color: #a0a0a0;
   margin: 1em 0;
+}
+
+a {
+  color: #f8f9fa;
 }
 
 .current-page {
